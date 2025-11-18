@@ -1,0 +1,14 @@
+# Mapping between logical light zones and Raspberry Pi GPIO pins.
+# These GPIO numbers match your actual SSR wiring.
+
+trees:
+  T1: 17        # Small Tree 1  (CH1)
+  T2: 18        # Small Tree 2  (CH2)
+  T3: 27        # Small Tree 3  (CH3)
+  BigTree: 22   # Large Tree    (CH4)
+
+bulbs:
+  B1: 23        # Bulbs 1       (CH5)
+  B2: 24        # Bulbs 2       (CH6)
+  B3: 25        # Bulbs 3       (CH7)
+  B4: 4         # Bulbs 4       (CH8)
