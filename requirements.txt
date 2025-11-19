@@ -2,3 +2,4 @@
 pygame
 gpiozero
 PyYAML
+python3-pygame

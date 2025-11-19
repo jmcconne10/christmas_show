@@ -1,0 +1,32 @@
+song: "Christmas Eve Sarajevo"
+file: "christmas_eve.mp3"
+
+sections:
+  - start: 0.0
+    end: 5.0
+    pattern: blink_all
+    options:
+      interval: 0.4
+
+  - start: 5.0
+    end: 10.0
+    pattern: chase_bulbs
+    options:
+      step_interval: 0.15
+
+  - start: 10.0
+    end: 15.0
+    pattern: wave_trees
+    options:
+      step_interval: 0.2
+
+  - start: 15.0
+    end: 20.0
+    pattern: sparkle
+    options:
+      interval: 0.1
+      on_fraction: 0.6
+
+  - start: 20.0
+    end: 23.0
+    pattern: finale_flash
