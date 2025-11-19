@@ -2,31 +2,80 @@ song: "Christmas Eve Sarajevo"
 file: "christmas_eve.mp3"
 
 sections:
+
+  # 0:00–0:08 — Soft intro bells
   - start: 0.0
-    end: 5.0
-    pattern: blink_all
-    options:
-      interval: 0.4
-
-  - start: 5.0
-    end: 10.0
-    pattern: chase_bulbs
-    options:
-      step_interval: 0.15
-
-  - start: 10.0
-    end: 15.0
-    pattern: wave_trees
-    options:
-      step_interval: 0.2
-
-  - start: 15.0
-    end: 20.0
+    end: 8.0
     pattern: sparkle
     options:
-      interval: 0.1
-      on_fraction: 0.6
+      interval: 0.15
+      on_fraction: 0.35
 
-  - start: 20.0
-    end: 23.0
+  # 0:08–0:17 — First strong accents
+  - start: 8.0
+    end: 17.0
+    pattern: blink_all
+    options:
+      interval: 0.30
+
+  # 0:17–0:26 — Beginning rhythm/build
+  - start: 17.0
+    end: 26.0
+    pattern: chase_bulbs
+    options:
+      step_interval: 0.18
+
+  # 0:26–0:44 — Classic Carol of the Bells melody
+  - start: 26.0
+    end: 44.0
+    pattern: wave_trees
+    options:
+      step_interval: 0.20
+
+  # 0:44–1:03 — Guitar hits enter
+  - start: 44.0
+    end: 63.0
+    pattern: alternate_trees_and_bulbs
+    options:
+      interval: 0.35
+
+  # 1:03–1:17 — Big sweeping section
+  - start: 63.0
+    end: 77.0
+    pattern: sparkle
+    options:
+      interval: 0.09
+      on_fraction: 0.55
+
+  # 1:17–1:36 — Fast rhythmic hits
+  - start: 77.0
+    end: 96.0
+    pattern: chase_bulbs
+    options:
+      step_interval: 0.12
+
+  # 1:36–1:53 — Soft middle break
+  - start: 96.0
+    end: 113.0
+    pattern: wave_trees
+    options:
+      step_interval: 0.28
+
+  # 1:53–2:08 — Build-up to finale
+  - start: 113.0
+    end: 128.0
+    pattern: alternate_trees_and_bulbs
+    options:
+      interval: 0.30
+
+  # 2:08–2:15 — Final big hits
+  - start: 128.0
+    end: 135.0
+    pattern: blink_all
+    options:
+      interval: 0.20
+
+  # 2:15–end — Grand finale flash
+  - start: 135.0
+    end: 140.0
     pattern: finale_flash
