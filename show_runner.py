@@ -4,6 +4,7 @@ import os
 import time
 import yaml
 import pygame
+import threading
 
 from gpio_controller import GPIOController
 import patterns
@@ -36,10 +37,25 @@ def play_song(song_path):
     return time.time()
 
 
+def timestamp_printer(start_time, stop_event):
+    """
+    Background function that prints a timestamp every second
+    while the song is playing.
+    """
+    next_t = 0.0
+    while not stop_event.is_set():
+        now = time.time() - start_time
+        if now >= next_t:
+            print(f"Time: {next_t:.1f}s")
+            next_t += 1.0
+        time.sleep(0.05)
+
+
 def run_show(show, base_dir="."):
     """
     Run a light show based on a loaded show config.
-    Also prints a timestamp every second during playback.
+    Also starts a background timestamp printer so you can
+    see the current playback time every second.
     """
     gpio = GPIOController()
 
@@ -52,9 +68,14 @@ def run_show(show, base_dir="."):
     print(f"Playing audio: {audio_path}")
     start_time = play_song(audio_path)
 
-    # Timestamp printing setup
-    next_timestamp = 0.0  # print at t=0, 1, 2, ...
-    last_check = time.time()
+    # Start background timestamp thread
+    stop_event = threading.Event()
+    ts_thread = threading.Thread(
+        target=timestamp_printer,
+        args=(start_time, stop_event),
+        daemon=True,
+    )
+    ts_thread.start()
 
     try:
         for section in sections:
@@ -68,15 +89,7 @@ def run_show(show, base_dir="."):
 
             # Wait until it is time for this section
             while time.time() - start_time < start:
-
-                # --- NEW TIMESTAMP PRINTING --- #
-                now = time.time() - start_time
-                if now >= next_timestamp:
-                    print(f"Time: {next_timestamp:.1f}s")
-                    next_timestamp += 1.0
-                # --------------------------------
-
-                time.sleep(0.05)
+                time.sleep(0.01)
 
             print(f"[{start:5.2f}–{end:5.2f}] Running pattern: {pattern_name}")
 
@@ -88,19 +101,11 @@ def run_show(show, base_dir="."):
 
             pattern_func = getattr(patterns, pattern_name)
 
-            # Run the pattern
+            # Run the pattern (blocking) for this section's duration
             pattern_func(gpio, duration=duration, **args)
 
         # After all sections: wait for music to stop
         while pygame.mixer.music.get_busy():
-
-            # --- Continue timestamp printing --- #
-            now = time.time() - start_time
-            if now >= next_timestamp:
-                print(f"Time: {next_timestamp:.1f}s")
-                next_timestamp += 1.0
-            # ------------------------------------ #
-
             time.sleep(0.1)
 
     finally:
@@ -110,6 +115,10 @@ def run_show(show, base_dir="."):
             pygame.mixer.music.stop()
         except Exception:
             pass
+
+        # Stop timestamp thread
+        stop_event.set()
+        ts_thread.join(timeout=1.0)
 
 
 if __name__ == "__main__":
