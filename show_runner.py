@@ -23,12 +23,11 @@ def load_show(file_path):
 def play_song(song_path):
     """
     Initialize pygame mixer and start playing the given audio file.
-    Returns the start time (time.time()) so we can sync patterns.
+    Returns the start time so we can sync patterns.
     """
     if not os.path.exists(song_path):
         raise FileNotFoundError(f"Audio file not found: {song_path}")
 
-    # Initialize mixer (safe to call multiple times)
     if not pygame.mixer.get_init():
         pygame.mixer.init(frequency=44100)
 
@@ -39,21 +38,23 @@ def play_song(song_path):
 
 def run_show(show, base_dir="."):
     """
-    Run a light show based on a loaded show config and base directory.
-    The YAML must contain:
-      - file: "somefile.mp3"
-      - sections: list of { start, end, pattern, options? }
+    Run a light show based on a loaded show config.
+    Also prints a timestamp every second during playback.
     """
     gpio = GPIOController()
 
     sections = show["sections"]
     audio_file = show["file"]
 
-    # Resolve MP3 path relative to YAML directory
+    # Resolve MP3 location
     audio_path = os.path.join(base_dir, audio_file)
 
     print(f"Playing audio: {audio_path}")
     start_time = play_song(audio_path)
+
+    # Timestamp printing setup
+    next_timestamp = 0.0  # print at t=0, 1, 2, ...
+    last_check = time.time()
 
     try:
         for section in sections:
@@ -61,31 +62,45 @@ def run_show(show, base_dir="."):
             start = float(section["start"])
             end = float(section["end"])
             duration = end - start
+
             if duration <= 0:
-                # Skip invalid or zero-length sections
                 continue
 
-            # Wait until it's time for this section
+            # Wait until it is time for this section
             while time.time() - start_time < start:
+
+                # --- NEW TIMESTAMP PRINTING --- #
+                now = time.time() - start_time
+                if now >= next_timestamp:
+                    print(f"Time: {next_timestamp:.1f}s")
+                    next_timestamp += 1.0
+                # --------------------------------
+
                 time.sleep(0.05)
 
             print(f"[{start:5.2f}–{end:5.2f}] Running pattern: {pattern_name}")
 
-            # Get any extra options for the pattern
             args = section.get("options", {})
 
-            # Look up the pattern function in patterns.py
             if not hasattr(patterns, pattern_name):
-                print(f"WARNING: Pattern '{pattern_name}' not found. Skipping section.")
+                print(f"WARNING: Pattern '{pattern_name}' not found. Skipping.")
                 continue
 
             pattern_func = getattr(patterns, pattern_name)
 
-            # Call the pattern. All patterns follow: func(gpio, duration=..., **options)
+            # Run the pattern
             pattern_func(gpio, duration=duration, **args)
 
-        # After all sections, wait for music to finish (if still playing)
+        # After all sections: wait for music to stop
         while pygame.mixer.music.get_busy():
+
+            # --- Continue timestamp printing --- #
+            now = time.time() - start_time
+            if now >= next_timestamp:
+                print(f"Time: {next_timestamp:.1f}s")
+                next_timestamp += 1.0
+            # ------------------------------------ #
+
             time.sleep(0.1)
 
     finally:
