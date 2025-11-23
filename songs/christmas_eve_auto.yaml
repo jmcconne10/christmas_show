@@ -13,7 +13,7 @@ sections:
   end: 12.0
   pattern: wave_all
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 0.32258066452
 - start: 12.0
   end: 24.0
   pattern: alternate_trees_and_bulbs
