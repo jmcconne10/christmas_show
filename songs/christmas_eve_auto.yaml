@@ -5,7 +5,7 @@
 file: christmas_eve.mp3
 sections:
 - start: 0.0
-  end: 7.0
+  end: 6.0
   pattern: wave_trees
   options:
     step_interval: 0.32258066452
