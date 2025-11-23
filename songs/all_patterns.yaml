@@ -1,5 +1,5 @@
 song: "Pattern Test"
-file: "pattern_test.mp3"
+file: "christmas_eve.mp3"
 sections:
   # 0:00–0:10 — All Off
   - start: 0.0
