@@ -6,7 +6,7 @@ file: christmas_eve.mp3
 sections:
 - start: 0.0
   end: 0.32258066452
-  pattern: all_off
+  pattern: wave_trees
   options:
     step_interval: 0.32258066452
 - start: 0.32258066452
