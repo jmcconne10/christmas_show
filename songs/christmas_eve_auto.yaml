@@ -3,22 +3,23 @@
 # Generated with 18 sections
 
 file: christmas_eve.mp3
+bpm: 168
 sections:
 - start: 0.0
   end: 0.32258066452
   pattern: wave_trees
   options:
-    step_interval: 4
+    step_interval: 1
 - start: 0.32258066452
   end: 6.0
   pattern: wave_trees
   options:
-    step_interval: 4
+    step_interval: 1
 - start: 6.0
   end: 12.0
   pattern: wave_all
   options:
-    step_interval: 4
+    step_interval: 1
 - start: 12.0
   end: 24.0
   pattern: alternate_trees_and_bulbs
