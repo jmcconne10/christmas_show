@@ -7,9 +7,7 @@ bpm: 186
 sections:
 - start: 0.0
   end: 0.32258066452
-  pattern: wave_trees
-  options:
-    step_interval: 1
+  pattern: all_off
 - start: 0.32258066452
   end: 6.0
   pattern: wave_trees
