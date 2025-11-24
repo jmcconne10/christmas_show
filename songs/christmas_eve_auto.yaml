@@ -13,97 +13,97 @@ sections:
   end: 6.0
   pattern: wave_trees
   options:
-    step_interval: 0.32258066452
+    step_interval: 1
 - start: 6.0
   end: 12.0
   pattern: wave_all
   options:
-    step_interval: 0.32258066452
+    step_interval: 1
 - start: 12.0
   end: 24.0
   pattern: alternate_trees_and_bulbs
   options:
-    interval: 0.16253968253968254
+    interval: 1
 - start: 24.0
   end: 36.0
   pattern: sparkle
   options:
-    interval: 0.1314447820186615
+    interval: 2
     on_fraction: 0.4030846059322357
 - start: 36.0
   end: 48.0
   pattern: chase_bulbs
   options:
-    step_interval: 0.08126984126984127
+    step_interval: 1
 - start: 48.0
   end: 60.0
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 3
 - start: 60.0
   end: 72.0
   pattern: alternate_trees_and_bulbs
   options:
-    interval: 0.16253968253968254
+    interval: 2
 - start: 72.0
   end: 84.0
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 1
 - start: 84.0
   end: 96.0
   pattern: blink_all
   options:
-    interval: 0.16253968253968254
+    interval: 2
 - start: 96.0
   end: 108.0
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 2
 - start: 108.0
   end: 120.0
   pattern: sparkle
   options:
-    interval: 0.13325533270835876
+    interval: 3
     on_fraction: 0.3930259346961975
 - start: 120.0
   end: 132.0
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 2
 - start: 132.0
   end: 144.0
   pattern: blink_all
   options:
-    interval: 0.21671957671957673
+    interval: 1
 - start: 144.0
   end: 156.0
   pattern: chase_bulbs
   options:
-    step_interval: 0.08126984126984127
+    step_interval: 3
 - start: 156.0
   end: 168.0
   pattern: alternate_trees_and_bulbs
   options:
-    interval: 0.16253968253968254
+    interval: 1
 - start: 168.0
   end: 180.0
   pattern: chase_bulbs
   options:
-    step_interval: 0.08126984126984127
+    step_interval: 3
 - start: 180.0
   end: 192.0
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 2
 - start: 192.0
   end: 204.0
   pattern: sparkle
   options:
-    interval: 0.1490657925605774
+    interval: 1
     on_fraction: 0.3051900565624237
 - start: 204.0
   end: 205.4
   pattern: wave_trees
   options:
-    step_interval: 0.16253968253968254
+    step_interval: 2
