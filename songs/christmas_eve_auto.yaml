@@ -8,7 +8,7 @@ sections:
   end: 0.32258066452
   pattern: wave_trees
   options:
-    step_interval: 0.32258066452
+    step_interval: 1
 - start: 0.32258066452
   end: 6.0
   pattern: wave_trees
