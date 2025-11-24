@@ -9,7 +9,7 @@ sections:
   end: 0.32258066452
   pattern: blink_all
   options:
-    step_interval: 1
+    nterval: 1
 - start: 0.32258066452
   end: 6.0
   pattern: wave_trees
