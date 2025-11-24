@@ -12,7 +12,7 @@ sections:
     interval: 1
 - start: 0.32258066452
   end: 6.0
-  pattern: wave_trees
+  pattern: trees_cascade
   options:
     step_interval: 1
 - start: 6.0
