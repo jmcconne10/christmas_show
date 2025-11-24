@@ -100,6 +100,29 @@ def wave_all(gpio, duration=5.0, step_interval=0.2):
             time.sleep(step_interval)
     gpio.all_off()
 
+def trees_cascade(gpio, duration=5.0, step_interval=0.2):
+    """
+    Cascade effect for trees: turn on one at a time, then turn off one at a time.
+    Sequence: T1 on, T2 on, T3 on, T4 on, T1 off, T2 off, T3 off, T4 off, repeat
+    """
+    end = time.time() + duration
+    names = [n for n in TREE_NAMES if n in gpio.channels]
+    if not names:
+        return
+    
+    while time.time() < end:
+        # Turn on each tree, one at a time (keeping previous ones on)
+        for name in names:
+            _safe_on(gpio, name)
+            time.sleep(step_interval)
+        
+        # Turn off each tree, one at a time
+        for name in names:
+            _safe_off(gpio, name)
+            time.sleep(step_interval)
+    
+    gpio.all_off()
+
 def chase_bulbs(gpio, duration=5.0, step_interval=0.15):
     """
     Chase pattern across the 4 bulb channels.
