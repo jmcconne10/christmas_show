@@ -9,13 +9,13 @@ sections:
   end: 0.32258066452
   pattern: blink_all
   options:
-    interval: 1
+    interval: 0.5
 - start: 0.32258066452
-  end: 6.0
-  pattern: trees_cascade
+  end: 4.0
+  pattern: blink_all
   options:
-    step_interval: 1
-- start: 6.0
+    interval: 0.5
+- start: 4.0
   end: 12.0
   pattern: wave_all
   options:

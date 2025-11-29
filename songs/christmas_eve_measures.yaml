@@ -1,0 +1,206 @@
+# Auto-generated light show for christmas_eve.mp3
+# Duration: 205.36s, Tempo: 184.6 BPM
+# Time signature: 4/4
+# Total measures: 157
+# Generated with 40 sections
+
+file: christmas_eve.mp3
+bpm: 184.6
+beats_per_measure: 4
+sections:
+- start_measure: 0
+  end_measure: 5
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 5
+  end_measure: 13
+  pattern: sparkle
+  options:
+    interval: 0.12926357984542847
+    on_fraction: 0.4152023494243622
+- start_measure: 13
+  end_measure: 15
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 15
+  end_measure: 25
+  pattern: sparkle
+  options:
+    interval: 0.13196232914924622
+    on_fraction: 0.40020933747291565
+- start_measure: 25
+  end_measure: 28
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 28
+  end_measure: 32
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 32
+  end_measure: 36
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 36
+  end_measure: 40
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 40
+  end_measure: 44
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 44
+  end_measure: 48
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start_measure: 48
+  end_measure: 52
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 52
+  end_measure: 56
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start_measure: 56
+  end_measure: 60
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 60
+  end_measure: 64
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 64
+  end_measure: 68
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 68
+  end_measure: 72
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 72
+  end_measure: 76
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 76
+  end_measure: 80
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 80
+  end_measure: 84
+  pattern: sparkle
+  options:
+    interval: 0.13339336216449738
+    on_fraction: 0.3922591805458069
+- start_measure: 84
+  end_measure: 88
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 88
+  end_measure: 92
+  pattern: sparkle
+  options:
+    interval: 0.1241825520992279
+    on_fraction: 0.4434303045272827
+- start_measure: 92
+  end_measure: 96
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 96
+  end_measure: 100
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 100
+  end_measure: 104
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start_measure: 104
+  end_measure: 108
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 108
+  end_measure: 112
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 112
+  end_measure: 116
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start_measure: 116
+  end_measure: 120
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 120
+  end_measure: 124
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start_measure: 124
+  end_measure: 128
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 128
+  end_measure: 132
+  pattern: blink_all
+  options:
+    interval: 0.16253968253968254
+- start_measure: 132
+  end_measure: 136
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 136
+  end_measure: 140
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 140
+  end_measure: 144
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start_measure: 144
+  end_measure: 148
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start_measure: 148
+  end_measure: 152
+  pattern: sparkle
+  options:
+    interval: 0.14720241725444794
+    on_fraction: 0.3155421316623688
+- start_measure: 152
+  end_measure: 156
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start_measure: 156
+  end_measure: 157
+  pattern: sparkle
+  options:
+    interval: 0.14998605847358704
+    on_fraction: 0.30007752776145935

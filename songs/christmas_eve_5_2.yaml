@@ -1,0 +1,213 @@
+# Auto-generated light show for christmas_eve.mp3
+# Duration: 205.36s, Tempo: 184.6 BPM
+# Generated with 40 sections
+
+file: christmas_eve.mp3
+sections:
+- start: 0.0
+  end: 5.2
+  pattern: sparkle
+  options:
+    interval: 0.13273271918296814
+    on_fraction: 0.39592939615249634
+- start: 5.2
+  end: 10.4
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 10.4
+  end: 15.6
+  pattern: sparkle
+  options:
+    interval: 0.13025027513504028
+    on_fraction: 0.4097207188606262
+- start: 15.6
+  end: 20.8
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 20.8
+  end: 26.0
+  pattern: sparkle
+  options:
+    interval: 0.1252603977918625
+    on_fraction: 0.4374423027038574
+- start: 26.0
+  end: 31.2
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 31.2
+  end: 36.4
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 36.4
+  end: 41.6
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 41.6
+  end: 46.8
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 46.8
+  end: 52.0
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 52.0
+  end: 57.2
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 57.2
+  end: 62.4
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 62.4
+  end: 67.6
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start: 67.6
+  end: 72.8
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 72.8
+  end: 78.0
+  pattern: blink_all
+  options:
+    interval: 0.16253968253968254
+- start: 78.0
+  end: 83.2
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 83.2
+  end: 88.4
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 88.4
+  end: 93.6
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start: 93.6
+  end: 98.8
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 98.8
+  end: 104.0
+  pattern: sparkle
+  options:
+    interval: 0.13125474750995636
+    on_fraction: 0.4041403532028198
+- start: 104.0
+  end: 109.2
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 109.2
+  end: 114.4
+  pattern: sparkle
+  options:
+    interval: 0.12844887375831604
+    on_fraction: 0.419728547334671
+- start: 114.4
+  end: 119.6
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 119.6
+  end: 124.8
+  pattern: sparkle
+  options:
+    interval: 0.13401994109153748
+    on_fraction: 0.38877812027931213
+- start: 124.8
+  end: 130.0
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 130.0
+  end: 135.2
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 135.2
+  end: 140.4
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 140.4
+  end: 145.6
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 145.6
+  end: 150.8
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 150.8
+  end: 156.0
+  pattern: blink_all
+  options:
+    interval: 0.16253968253968254
+- start: 156.0
+  end: 161.2
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 161.2
+  end: 166.4
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start: 166.4
+  end: 171.6
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 171.6
+  end: 176.8
+  pattern: blink_all
+  options:
+    interval: 0.21671957671957673
+- start: 176.8
+  end: 182.0
+  pattern: chase_bulbs
+  options:
+    step_interval: 0.08126984126984127
+- start: 182.0
+  end: 187.2
+  pattern: alternate_trees_and_bulbs
+  options:
+    interval: 0.16253968253968254
+- start: 187.2
+  end: 192.4
+  pattern: blink_all
+  options:
+    interval: 0.16253968253968254
+- start: 192.4
+  end: 197.6
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
+- start: 197.6
+  end: 202.8
+  pattern: sparkle
+  options:
+    interval: 0.14971014857292175
+    on_fraction: 0.3016102910041809
+- start: 202.8
+  end: 205.4
+  pattern: wave_trees
+  options:
+    step_interval: 0.16253968253968254
